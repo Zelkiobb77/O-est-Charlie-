@@ -1,0 +1,41 @@
+{
+  "tool": "Identity Pivot",
+  "input": "john.doe@example.com",
+  "timestamp": "2026-06-28T23:00:19",
+  "data": {
+    "input": "john.doe@example.com",
+    "breaches": {
+      "error": "no_api_key"
+    },
+    "username": {
+      "target": "johndoe",
+      "found": [
+        "Chess.com",
+        "Dev.to",
+        "Docker Hub",
+        "GitHub",
+        "GitLab",
+        "Keybase",
+        "SoundCloud",
+        "Steam"
+      ],
+      "unknown": [
+        "HackerNews"
+      ],
+      "checked": [
+        "GitHub",
+        "GitLab",
+        "Dev.to",
+        "Docker Hub",
+        "Keybase",
+        "Chess.com",
+        "SoundCloud",
+        "PyPI",
+        "Steam",
+        "Telegram",
+        "HackerNews"
+      ]
+    },
+    "interrupted": false
+  }
+}

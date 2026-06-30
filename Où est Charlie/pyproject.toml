@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osting"
+version = "1.0.0"
+description = "OSTING — multitool OSINT (sources publiques) avec menu interactif coloré."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zelkiobb" }]
+keywords = ["osint", "cli", "reconnaissance", "security", "recon"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Topic :: Security",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+    "dnspython>=2.6.0",
+    "python-whois>=0.9.4",
+    "Pillow>=10.2.0",
+    "phonenumbers>=8.13.0",
+    "pyfiglet>=1.0.2",
+]
+
+[project.urls]
+Repository = "https://github.com/Zelkiobb/osting"
+
+# Après `pip install .`, la commande `osting` devient disponible partout.
+[project.scripts]
+osting = "osting.__main__:main"
+
+[tool.setuptools]
+packages = ["osting", "osting.modules"]
+
+[tool.setuptools.package-data]
+osting = ["data/*.json"]
